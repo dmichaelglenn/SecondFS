@@ -1,0 +1,7 @@
+<h1>{{testMessage}}</h1>
+
+<form>
+    <select ng-change="userSelected(selectedUser)" ng-model="selectedUser">
+        <option ng-repeat="user in usersList" value="{{user._id}}">{{user.name}}</option>
+    </select>
+</form>
